@@ -1,9 +1,9 @@
-‘use strict’; 
-const express = require(‘express’); 
+// "use strict"; 
+const express = require("express"); 
 const PORT = 8080;
-const HOST = ‘0.0.0.0’; 
+const HOST = "0.0.0.0"; 
 const app = express(); 
-app.get(‘/’, (req, res) => { 
+app.get("/", (req, res) => { 
     res.send(`Hello Aubrey and Adalynn!<br><br>I see you’re from: ${req.ip}`); 
     console.log(`Request incoming from: ${req.ip}`);
 }); 
